@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing symbols</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--[if lte IE 8]><script>document.createElement(main);</script><![endif]-->
+    <style>
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 0;
+      padding: 2em;
+      font: 1em/1.4 verdana, sans-serif;
+    }
+    main {
+      display: block;
+      width: 90%;
+      max-width: 50em;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      margin: .2em 0 1em;
+      padding-bottom: .2em;
+      color: #666;
+      font-size: 1.6em;
+      border-bottom: 1px solid #666;
+    }
+    *+h2, *+h3 {
+      margin-top: 1.4em;
+    }
+    h2 {
+      font-size: 1.4em; 
+    }
+    h3 {
+      font-size: 1.3em; 
+    }
+    ul {
+      margin: 0 0 .6em;
+      padding: 0;
+      list-style-type: disc;
+    }
+      li {
+        margin-left: 1em;
+      }
+    p {
+      margin: 0 0 .6em;
+    }
+    a {
+      color: #059;
+    }
+        a:visited {
+          color: #808;
+        }
+        a:focus, a:hover {
+          color: #080;
+        }
+        a:focus, button:focus {
+          outline: 2px solid #f00;
+        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      vertical-align: top;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+      thead tr th:first-child {
+        width: 150px;
+      }
+    pre {
+      margin: 1em 0;
+      padding: 10px; 
+      background-color: #f5f5f5;
+      border: 1px solid #aaa;
+    }
+    code {
+      color: #000;
+      font: 1em/1.2 monospace;
+    }
+    dt, dd {
+      display: inline-block;
+      vertical-align: top;
+      min-height: 4em;
+      margin: 0 0 .5em;
+      padding: .2em;
+    }
+    dt {
+      width: 36%;
+      padding-right: .6em;
+      color: #444;
+      font-weight: bold;
+    } 
+    dd {
+      width: 60%;
+    }
+    dt:nth-of-type(2n),
+    dd:nth-of-type(2n) {
+      background-color: #f5f5f5;
+    }
+    dt.fail, dd.fail {
+      background-color: pink;
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>How are basic math symbols read out in various screen readers?</h1>
+      <p>The text below is taken from the <a href="https://media.pearsoncmg.com/cmg/pmmg_mml_shared/powerpoint/powerpoint.html#math">Powerpoint Guidelines</a>.</p>
+      <h2>Setting MathType Equations</h2>
+      <p>Keyboard characters that should be used only from within MathType to create a MathType equation:</p>
+      <ul>
+        <li>Letters</li>
+        <li>Numbers</li>
+        <li>Minus sign</li>
+        <li>Plus sign</li>
+        <li>Equal sign</li>
+        <li>Comma</li>
+        <li>Exclamation point</li>
+        <li>Dollar</li>
+        <li>Percent</li>
+        <li>Less than</li>
+        <li>Greater than</li>
+      </ul>
+
+      <p>These characters must be applied from the MathType toolbar:</p>
+      <ul>
+        <li>Tilde</li>
+        <li>Similar to</li>
+        <li>Prime</li>
+        <li>Caret</li>
+        <li>Asterisk</li>
+        <li>Parentheses</li>
+        <li>Brackets</li>
+        <li>Angle brackets</li>
+        <li>Braces</li>
+        <li>Less than or equal to</li>
+        <li>Greater than or equal to</li>
+        <li>Multiplication dot (called the "dot operator", use the smallest of the MathType pull-down choices; using this symbol will also include space on either side of the operator automatically)</li>
+      </ul>
+
+      <h2>Test</h2>
+      <p>We're using both direct-keyboard versions and Unicode versions.</p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Symbol name</th>
+            <th scope="col">JAWS IE</th>
+            <th scope="col">JAWS FF</th>
+            <th scope="col">JAWS Chrome</th>
+            <th scope="col">NVDA IE</th>
+            <th scope="col">NVDA FF</th>
+            <th scope="col">NVDA Chrome</th>
+            <th scope="col">Orca FF</th>
+            <th scope="col">VO Saffy</th>
+            <th scope="col">VO iOS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr> 
+            <td>Letters: &#969; (lowercase omega)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Numbers: 145.22 </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Hyphen sign: &#8208;. Hyphen-minus: -. Minus sign: &#8722;. N-dash: &#8211; </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Plus sign: + </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Equal sign: = </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+          <tr> 
+            <td>Comma: , </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+          <tr> 
+            <td>Exclamation point: !</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+          <tr> 
+            <td>Dollar: $</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Percent: %. Permil: &#8240;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Less than: &lt;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Greater than: &gt;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Tilde: ~. HTML character tilde: &#732;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Omega: &#937;. Ohm: &#8486;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Plus/Minus: &#177;. Similar to: &#8764;<br>
+            Congruent: &#8773;. Almost equal to: &#8776;
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>prime: &#8242;. Prime: &#8243;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Caret: ^</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Asterisk: *. Asterisk operator: &#8727; </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Parentheses: ( foo )</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Brackets: [ foo ]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Angle brackets: &lt; foo &gt;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Braces: { foo }</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Less than or equal to: &#8804;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Greater than or equal to: &#8805;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Fraction slash: 3&#8260;4. Division slash: 1&#8725;2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Multiplication dot ("dot operator"): &#8901;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Times: &#215;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Divide: &#247;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr> 
+            <td>Not: &#172;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Note on the Ohm symbol: It triggers a warning from the W3C: "Text run is not in Unicode Normalization Form C."</p>
+      <p>From StackOverflow: The reference &#8486; (Ω) triggers the message, because it's defined to be canonical equivalent to Omega (Ω). The Unicode Standard explicitly says that the latter is the preferred character and is also better covered in fonts.</p>
+      <p>However in electrical diagrams, it makes sense to use the dedicated ohm symbol to me...</p>
+
+      <h2>Results</h2>
+      <dl>
+        <dt></dt
+          ><dd></dd
+        ><dt></dt
+          ><dd></dd
+        ><dt class="fail"></dt
+          ><dd class="fail"></dd
+        ><dt></dt
+          ><dd></dd
+        ><dt></dt
+          ><dd></dd
+        ><dt></dt
+          ><dd></dd
+        ><dt class="fail"></dt
+          ><dd class="fail"></dd
+        ><dt></dt
+          ><dd></dd
+        ><dt></dt
+          ><dd></dd
+      ></dl>
+    </main>
+  </body>
+</html>
