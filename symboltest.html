@@ -134,17 +134,21 @@
       </ul>
 
       <h2>Test</h2>
-      <p>We're using both direct-keyboard versions and Unicode versions.</p>
+      <p>Details:</p>
+      <ul>
+        <li>We're using both direct-keyboard versions and Unicode versions</li>
+        <li>IE11, Firefox latest (as of August 2017), Chrome latest on Windows 7. Firefox latest on Ubuntu Linux (Trusty).</li>
+        <li>JAWS 18, NVDA 2017.3, Orca 3.18 (need newer Orca!). NVDA was tested in its default punctuation level (some) as well as most and all.</li>
+        <li>Spelling was checked in all tests, but only written where it was interesting, and only once per punctuation mode</li>
+      </ul>
       <table>
         <thead>
           <tr>
             <th scope="col">Symbol name</th>
-            <th scope="col">JAWS IE</th>
-            <th scope="col">JAWS FF</th>
-            <th scope="col">JAWS Chrome</th>
-            <th scope="col">NVDA IE</th>
-            <th scope="col">NVDA FF</th>
-            <th scope="col">NVDA Chrome</th>
+            <th scope="col">JAWS 18</th>
+            <th scope="col">NVDA (some)</th>
+            <th scope="col">NVDA (most)</th>
+            <th scope="col">NVDA (all)</th>
             <th scope="col">Orca FF</th>
             <th scope="col">VO Saffy</th>
             <th scope="col">VO iOS</th>
@@ -154,11 +158,9 @@
           <tr> 
             <td>Letters: &#969; (lowercase omega)</td>
             <td>"omega"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"omega"</td>
+            <td>"omega"</td>
+            <td>"omega"</td>
             <td>"omega"</td>
             <td></td>
             <td></td>
@@ -166,11 +168,9 @@
           <tr> 
             <td>Numbers: 145.22 </td>
             <td>"one hundred forty-five point two two"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"one hundred and forty-five point two two"</td>
+            <td>"one hundred and forty-five point two two"</td>
+            <td>"one hundred and forty-five point two two"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -178,11 +178,9 @@
           <tr> 
             <td>Hyphen sign: &#8208;45. &#969; - 2. The word hyphen-minus.</td>
             <td>"Minus forty-five. Omega dash two. The word hyphen dash minus"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Forty-five. Omega two. The word hyphen minus"</td>
+            <td>"Forty-five. Omega dash two. The word hyphen dash minus"</td>
+            <td>"Forty-five. Omega dash two. The word hyphen dash minus"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -190,11 +188,9 @@
           <tr> 
             <td>Hyphen-minus: -46.</td>
             <td>"Minus 46"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Minus 46"</td>
+            <td>"Minus 46"</td>
+            <td>"Minus 46"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -202,11 +198,9 @@
           <tr> 
             <td>Minus sign: 5 &#8722; 22. &#8722;46.</td>
             <td>"Five minus twenty-two. Minus forty-six"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Five minus twenty-two. Minus forty-six"</td>
+            <td>"Five minus twenty-two. Minus forty-six"</td>
+            <td>"Five minus twenty-two. Minus forty-six"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -214,11 +208,9 @@
           <tr> 
             <td>N-dash: murder&#8211;she wrote.</td>
             <td>"Murder endash she wrote"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Murder she wrote"</td>
+            <td>"Murder endash she wrote"</td>
+            <td>"Murder endash she wrote"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -226,11 +218,9 @@
           <tr> 
             <td>Plus sign: + </td>
             <td>"plus"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"plus"</td>
+            <td>"plus"</td>
+            <td>"plus"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -238,11 +228,9 @@
           <tr> 
             <td>Equal sign: = </td>
             <td>"equals"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"equals"</td>
+            <td>"equals"</td>
+            <td>"equals"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -250,11 +238,9 @@
           <tr> 
             <td>Comma: , </td>
             <td>"" (when spelling, "comma")</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"" (when spelling, "comma")</td>
+            <td>""</td>
+            <td>"comma"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -262,11 +248,9 @@
           <tr> 
             <td>Exclamation point: !</td>
             <td>"" (when spelling, "exclaim")</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"" (when spelling, "bang")</td>
+            <td>""</td>
+            <td>"Bang"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -274,11 +258,9 @@
           <tr> 
             <td>Dollar: $</td>
             <td>"dollar"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"dollar"</td>
+            <td>"dollar"</td>
+            <td>"dollar"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -286,11 +268,9 @@
           <tr> 
             <td>Percent: %. Permil: &#8240;</td>
             <td>"percent. permil sign"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"percent." (when spelling, "per mil")</td>
+            <td>"percent." (when spelling, "per mil")</td>
+            <td>"percent." (when spelling, "per mil")</td>
             <td></td>
             <td></td>
             <td></td>
@@ -298,11 +278,9 @@
           <tr> 
             <td>Less than: &lt;</td>
             <td>"less"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"less"</td>
+            <td>"less"</td>
+            <td>"less"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -310,11 +288,9 @@
           <tr> 
             <td>Greater than: &gt;</td>
             <td>"greater"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"greater"</td>
+            <td>"greater"</td>
+            <td>"greater"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -322,11 +298,9 @@
           <tr> 
             <td>Tilde: ~. HTML character tilde: &#732;</td>
             <td>"Tilde. Tilde"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"" (when spelling, "tilde" and nothing)</td>
+            <td>"Tilde" (nothing for HTML version)</td>
+            <td>"Tilde" (nothing for HTML version)</td>
             <td></td>
             <td></td>
             <td></td>
@@ -334,11 +308,9 @@
           <tr> 
             <td>Omega: &#937;. Ohm: &#8486;</td>
             <td>"Omega. Ohm sign"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Omega. Letter two one two six."</td>
+            <td>"Omega. Letter two one two six."</td>
+            <td>"Omega. Letter two one two six."</td>
             <td></td>
             <td></td>
             <td></td>
@@ -348,11 +320,9 @@
             Congruent: &#8773;. Almost equal to: &#8776;
             </td>
             <td>"Plus or minus. Tilde. Approximately equal to. Almost equal to"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Plus or minus. . . Approximately" (nothing for similar or congruent)</td>
+            <td>"Plus or minus. . . Approximately"</td>
+            <td>"Plus or minus. . . Approximately"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -360,11 +330,9 @@
           <tr> 
             <td>prime: &#8242;. Prime: &#8243;</td>
             <td>"Prime. Double prime"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"" (when spelling, "prime" and "double prime")</td>
+            <td>"" (when spelling, "prime" and "double prime")</td>
+            <td>"" (when spelling, "prime" and "double prime")</td>
             <td></td>
             <td></td>
             <td></td>
@@ -372,11 +340,9 @@
           <tr> 
             <td>Caret: ^</td>
             <td>"Caret"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"" (when spelling, "caret")</td>
+            <td>"Caret"</td>
+            <td>"Caret"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -384,11 +350,9 @@
           <tr> 
             <td>Asterisk: *. Asterisk operator: &#8727; </td>
             <td>"Star. Asterisk"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Star. Asterisk"</td>
+            <td>"Star. Asterisk"</td>
+            <td>"Star. Asterisk"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -396,11 +360,9 @@
           <tr> 
             <td>Parentheses: ( foo )</td>
             <td>"Left paren ... right paren"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>""</td>
+            <td>"Left paren ... right paren"</td>
+            <td>"Left paren ... right paren"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -408,11 +370,9 @@
           <tr> 
             <td>Brackets: [ foo ]</td>
             <td>"Left bracket ... right bracket"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>""</td>
+            <td>"Left bracket ... right bracket"</td>
+            <td>"Left bracket ... right bracket"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -420,11 +380,9 @@
           <tr> 
             <td>Angle brackets: &lt; foo &gt;</td>
             <td>"Less ... greater"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Less ... greater"</td>
+            <td>"Less ... greater"</td>
+            <td>"Less ... greater"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -432,11 +390,9 @@
           <tr> 
             <td>Braces: { foo }</td>
             <td>"Left brace ... right brace"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>""</td>
+            <td>"Left brace ... right brace"</td>
+            <td>"Left brace ... right brace"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -444,11 +400,9 @@
           <tr> 
             <td>Less than or equal to: &#8804;</td>
             <td>"Less than or equal to"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Less than or equal to"</td>
+            <td>"Less than or equal to"</td>
+            <td>"Less than or equal to"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -456,11 +410,9 @@
           <tr> 
             <td>Greater than or equal to: &#8805;</td>
             <td>"Greater than or equal to"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Greater than or equal to"</td>
+            <td>"Greater than or equal to"</td>
+            <td>"Greater than or equal to"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -468,11 +420,9 @@
           <tr> 
             <td>Fraction slash: 3&#8260;4. Division slash: 1&#8725;2</td>
             <td>"Three fraction slash four. One divided by 2"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Three four. One two." (when spelling, calls them symbol + number)</td>
+            <td>"Three four. One two." </td>
+            <td>"Three four. One two." </td>
             <td></td>
             <td></td>
             <td></td>
@@ -480,11 +430,9 @@
           <tr> 
             <td>Multiplication dot ("dot operator"): &#8901;</td>
             <td>"Dot"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"" (nothing when spelled)</td>
+            <td>""</td>
+            <td>""</td>
             <td></td>
             <td></td>
             <td></td>
@@ -492,11 +440,9 @@
           <tr> 
             <td>Times: &#215;</td>
             <td>"Times"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Times"</td>
+            <td>"Times"</td>
+            <td>"Times"</td>
             <td></td>
             <td></td>
             <td></td>
@@ -504,29 +450,26 @@
           <tr> 
             <td>Divide: &#247;</td>
             <td>"Divided by"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Divide by"</td>
+            <td>"Divide by"</td>
+            <td>"Divide by"</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr> 
-            <td>Not: &#172;</td>
+            <th scope="row">Not: &#172;</th>
             <td>"Optional hyphen"</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>"Not sign"</td>
+            <td>"Not sign"</td>
+            <td>"Not sign"</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
         </tbody>
       </table>
+      <p>NVDA note: What's written out for NVDA (all) is omitting the "dot" spoken for the periods separating symbols.</p>
       <p>Note on the Ohm symbol: It triggers a warning from the W3C: "Text run is not in Unicode Normalization Form C."</p>
       <p>From StackOverflow: The reference &#8486; (Ω) triggers the message, because it's defined to be canonical equivalent to Omega (Ω). The Unicode Standard explicitly says that the latter is the preferred character and is also better covered in fonts.</p>
       <p>However in electrical diagrams, it makes sense to use the dedicated ohm symbol to me...</p>
